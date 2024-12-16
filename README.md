@@ -1,7 +1,7 @@
 Steps to run the application
 Give the following commands at terminal after opening the folder in vs code.
-• cd Learning 
-• dotnet run
+-> cd Learning 
+-> dotnet run
 
  
  Screenshots
