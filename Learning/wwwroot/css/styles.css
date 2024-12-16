@@ -1,0 +1,705 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+}
+
+[data-theme="dark"] {
+    --bg-color: linear-gradient(45deg, #1f1c1cc0, #000000);
+    --text-color: #f5f5f5;
+}
+
+[data-theme="colorful"] {
+    --bg-color: linear-gradient(45deg, #161a3b, #161a3b);
+    --text-color: #333333;
+}
+
+ 
+    
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: var(--text-color, #000);
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+.container {
+    padding:0px;
+    
+    
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* Progress Bar Container */
+
+ 
+/* .progress-bar-container {
+    width: 100%;
+    height: 25px;
+    background-color: #f3f3f3;
+    border-radius: 12px;
+    margin-top: 5px;
+} */
+
+/* Progress Bar Style */
+/* .progress-bar {
+    height: 100%;
+    width: 0%; 
+    background: linear-gradient(90deg, #4caf50, #8bc34a);
+    border-radius: 12px;
+    transition: width 2s ease-in-out; /* Smooth animation */
+    /* transition: width 1s ease-in-out; */
+    
+    
+    .progress-section {
+       background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    }
+    
+    .course-name {
+        font-weight: bold;
+    }
+    
+    .progress-bar {
+        height: 100%;
+        transition: width 1s ease-in-out; /* Add animation */
+        border-radius: 5px;
+        text-align: center;
+        color: purple;
+        font-weight: bold;
+    }
+    
+    /* Color gradients for different progress levels */
+    .progress-bar[data-progress="100"] {
+        background: linear-gradient(45deg, #4CAF50, #81C784); /* Green */
+    }
+    
+    .progress-bar[data-progress="80"] {
+        background: linear-gradient(45deg, #FFC107, #FFEB3B); /* Yellow */
+    }
+    
+    .progress-bar[data-progress="60"] {
+        background: linear-gradient(45deg, #FF9800, #FF5722); /* Orange */
+    }
+    
+    .progress-bar[data-progress="40"] {
+        background: linear-gradient(45deg, #F44336, #E57373); /* Red */
+    }
+    
+    /* Hover effect for progress bars */
+    .progress-bar:hover {
+        opacity: 0.9;
+        cursor: pointer;
+    }
+    
+    /* Styling for the course section */
+    .course {
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .course-name {
+        font-size: 1.1rem;
+        color: #333;
+    }
+    
+    .progress-percent {
+        font-size: 1rem;
+        color: #555;
+    }
+    
+  
+
+
+/* Course Section */
+.course {
+    margin-bottom: 20px;
+    
+}
+.course span {
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+/* .progress-section .course {
+    margin-bottom: 10px;
+} */
+
+/* .progress-bar-container {
+    background: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+} */
+
+/* .progress-bar {
+    background: #76c7c0;
+    height: 100%;
+    transition: width 1s ease-in-out;
+} */
+
+.achievements .achievement {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* .achievements .achievement img {
+    width: 10px;
+    height: 50px;
+} */
+.achievement-image {
+    width: 100px;      /* Set width of image */
+    height: auto;      /* Maintain aspect ratio */
+    margin: 0 auto;    /* Center the image if needed */
+}
+
+.leaderboard-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard-section li {
+    padding: 5px;
+}
+
+.leaderboard-section .highlight {
+    background: green;
+}
+
+.theme-customization button {
+    margin-right: 50px;
+    padding: 10px;
+}
+/* Light Theme */
+body.light-theme {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container.light-theme {
+    background-color: #f0f0f0;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+.container.dark-theme {
+    background-color: #3a3a3a;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #4caf50;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+    color: white;
+}
+/* .reward-tracker {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background */
+    /* border: 2px solid #007bff; /* Bootstrap primary color */
+    /* border-radius: 8px;
+    margin: 20px auto;
+    /* width: 50%; /* Centered with a set width */
+/* } */
+
+/* #countdown-timer {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 10px;
+} */
+/* @media (max-width: 768px) {
+    #countdown-timer {
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 20px; /* Adjust font size for smaller screens */
+    /* }
+} */ 
+ /* General styling */
+.reward-tracker {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reward-tracker h2 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem); /* Fluid responsive font size */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#countdown-timer {
+    font-size: clamp(1.2rem, 2.5vw, 2rem); /* Timer adjusts with viewport */
+    color: #007bff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+.reward-tracker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .reward-tracker {
+        padding: 15px;
+    }
+
+    #countdown-timer {
+        font-size: 1.2rem; /* Slightly smaller font size for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .reward-tracker {
+        padding: 10px;
+    }
+
+    #countdown-timer {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+}
+
+.name{
+    font-size: 2rem;                   /* Slightly smaller than h1 */
+    color:rgb(12, 221, 12);   
+    animation: fadeIn 1s ease-in-out;
+    
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .name {
+      font-size: 1.8rem; /* Smaller font for tablets */
+      margin: 0.8rem 0; /* Adjust spacing */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .name {
+      font-size: 1.5rem; /* Even smaller font for mobile screens */
+      margin: 0.5rem 0;
+    }
+  }
+  
+.leaderboard-container{
+    background-color: #f3f3ef;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Highlight the user's rank */
+.highlight {
+    background-color: yellow !important;
+    
+    font-weight: bold !important;
+}
+
+/* Customize list items */
+.leaderboard-container ul {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover {
+    background-color:lightyellow;
+}
+
+/* Badge for the user's rank */
+.badge {
+    font-size: 0.9rem;
+}
+
+/* Style the rank info (user's score) */
+.rank-info {
+    font-size: 1rem; /* Base size for larger screens */
+    color: gray;
+  }
+  
+  @media (max-width: 768px) {
+    .rank-info {
+      font-size: 0.9rem; /* Smaller text for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .rank-info {
+      font-size: 0.8rem; /* Even smaller text for mobile */
+    }
+  }
+  
+.theme-buttons {
+    display: flex;
+    justify-content: center; /* Align buttons in the center horizontally */
+    gap: 15px; /* Space between buttons */
+    margin: 20px 0; /* Add some space around the button group */
+}
+
+.theme-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-buttons button:hover {
+    opacity: 0.8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+.theme-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center-align the buttons */
+    gap: 10px; /* Add space between buttons */
+}
+
+.theme-buttons button {
+    width: 80%; /* Make the buttons stretch for smaller screens */
+    max-width: 200px; /* Limit the maximum button width */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-buttons button:hover {
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    .theme-buttons {
+        flex-direction: column; /* Stack buttons vertically for small screens */
+        gap: 10px;
+    }
+
+    .theme-buttons button {
+        width: 90%; /* Make buttons span more space on small screens */
+        max-width: 300px;
+    }
+}
+/* Initial state */
+.animate-section {
+    opacity: 0;
+    transform: translateY(20px); /* Default slide-up effect */
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* When visible */
+.animate-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom animations */
+[data-animation="fade-in"] {
+    transform: none;
+}
+
+[data-animation="slide-up"] {
+    transform: translateY(20px);
+}
+
+[data-animation="zoom-in"] {
+    transform: scale(0.95);
+}
+
+[data-animation="zoom-in"].visible {
+    transform: scale(1);
+}
+.animate-section {
+    transition-delay: 0.2s; /* Adjust as needed */
+}
+
+.animate-section:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.animate-section:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+/* Footer Background Color */
+.footer {
+    background-color: #343a40;
+}
+
+/* Footer Text Styling */
+.footer h5 {
+    font-weight: bold;
+}
+
+.footer ul {
+    padding-left: 0;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #007bff; /* Hover effect color */
+}
+
+/* Social Media Icon Style */
+.footer .fab {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .fab:hover {
+    color: #007bff;
+}
+
+/* Copyright Section */
+.footer .text-center {
+    font-size: 0.9rem;
+    color: #bdbdbd;
+}
+ 
+/* Card Styling */
+.card {
+    position: relative;
+    width: 100%;
+    max-width: 18rem;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    gap: 10px;
+}
+
+/* Image Styling */
+.card-img-top {
+    width: 100%;
+    height: 100%; /* Ensure the image fills the card */
+    object-fit: cover;
+}
+
+/* Overlay with hidden details */
+.achievement-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensure it covers the entire card */
+    background-color:black; /* Semi-transparent background */
+    color: rgb(255, 255, 255);
+    display: none; /* Hide by default */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box; /* Include padding in the height/width calculations */
+    z-index: 1;
+
+}
+
+/* Show the overlay when hovering over the card */
+.card:hover .achievement-overlay {
+    display: block;
+    opacity: 1;
+    
+}
+
+/* Card Hover Effect: Zoom In */
+.card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+
+}
+
+
+/* Styling for achievement details text */
+.achievement-details {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+@media (max-width: 768px) {
+    .achievement-overlay {
+      padding: 1.5rem;
+    }
+  
+    .card-title {
+      font-size: 1.25rem; /* Slightly smaller heading */
+    }
+  
+    .card-text {
+      font-size: 0.9rem; /* Reduce paragraph size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .achievement-overlay {
+      padding: 1rem;
+    }
+  
+    .card-title {
+      font-size: 1rem; /* Smallest heading size */
+    }
+  
+    .card-text {
+      font-size: 0.8rem; /* Smallest text size */
+    }
+  }
+  
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+
+.profile-name {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile-email {
+    font-size: 12px;
+    color: white;
+}
+.user-profile {
+    position: absolute; /* Place it at the left corner */
+    top: 20px;          /* Adjust distance from the top */
+    left: 20px;         /* Adjust distance from the left */
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 50px;        /* Set the size of the profile image */
+    height: 50px;       /* Maintain aspect ratio */
+    object-fit: cover;  /* Ensure the image doesn't stretch */
+    border: 2px solid #ffffff; /* Optional: Add a border for better visibility */
+}
+
+.profile-name {
+    font-size: 14px;    /* Adjust name font size */
+    font-weight: bold;
+}
+
+.profile-email {
+    font-size: 12px;    /* Adjust email font size */
+    color: #ccc;        /* Use a lighter color for email */
+}
+
+header {
+    position: relative; /* Ensure the profile section doesn't overlap other elements */
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .user-profile {
+        top: 10px;
+        left: 10px;
+    }
+
+    .profile-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-name {
+        font-size: 12px;
+    }
+
+    .profile-email {
+        font-size: 10px;
+    }
+}
+
+body {
+    font-size: 16px; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Smaller font for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px; /* Smaller font for mobile */
+    }
+}
+.re{
+    font-size: 5vw;
+}    
+
+ 
+ 

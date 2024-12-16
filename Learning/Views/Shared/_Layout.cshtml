@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Learning</title>
+    <script type="importmap"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Learning.styles.css" asp-append-version="true" />
+     
+</head>
+<body>
+   <header class="bg-dark text-white text-center py-4">
+    <h1 >Welcome to Learning Portal</h1>
+    <p class="lead">Enhance your skills and track your progress</p>
+    <div class="d-flex align-items-center user-profile"></div>
+                <img src="images/achievements/user.png" alt="User Profile" class="profile-img rounded-circle">
+                <div class="ms-2">
+                    <span class="profile-name d-block">DEVIKA M</span>
+                    <span class="profile-email text-muted small">devika@example.com</span>
+                </div>
+</header>
+ 
+
+ 
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+         
+    </div>
+    
+ <footer class="footer bg-dark text-white text-center" style="position:relative; height:100%; bottom: 0;  display: flex; ">
+        <div class="container">
+            <p class="text-center"></p>
+            <p>
+                <a href="" class="text-white">Contact Us</a> | 
+                <a href="" class="text-white">Privacy Policy</a>
+            </p>
+        </div>
+    </footer>
+
+<script src="/Scripts/scripts.js"></script>
+ 
+ 
+     
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+
+</html>
+ 
